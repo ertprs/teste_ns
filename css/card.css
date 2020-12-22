@@ -1,0 +1,46 @@
+.container-fostrap {
+  display: table-cell;
+  vertical-align: middle;
+}
+.fostrap-logo {
+  width: 100px;
+  margin-bottom:15px
+} 
+.card2 {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+    transition: box-shadow .25s; 
+}
+.card2:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.img-card {
+  width: 100%;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  display:block;
+    overflow: hidden;
+}
+.img-card img{
+  width: 100%;
+  height: 200px;
+  object-fit:cover; 
+  transition: all .25s ease;
+} 
+.card-content {
+ padding: 5px;
+    text-align: left;
+    font-size: .8em;
+}
+.nomecasal{
+  padding: 10px;
+      border: solid 1px #9918db;
+  text-align: center;
+  -webkit-border-radius: 100px;
+-moz-border-radius: 100px;
+border-radius: 100px;
+}
