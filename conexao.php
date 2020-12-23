@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("", "rafacoelho6", "46#[arvoreazul6", "rafacoel_ns") or die(mysqli_error($con));
+$con = mysqli_connect("", "root", "", "rafacoel_ns") or die(mysqli_error($con));
 
 mysqli_query($con,"SET NAMES 'utf8'");
 mysqli_query($con,'SET character_set_connection=utf8');
