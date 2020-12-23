@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>Imprensa - Sistema administrativo </title>
+	<title>Teste Nova Singular - Sistema administrativo </title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -38,7 +38,7 @@
 					<div class="col-lg-12">
 						<div class="wrap-login100">	
 							<span class="login100-form-title p-b-10">
-								<img src="images/hc_logo-branco.png" class="img-fluid">
+								<img src="images/logo-branco.png" class="img-fluid">
 							</span>
 							<center>
 								<hr>
@@ -74,8 +74,8 @@
 					<div class="col-lg-12">
 						<div class="sidebar-footer">
 							<center>			                       
-								<a href="https://limaocravo.blog/" target="_blank">
-									<h6><small>Desenvolvido por Limão Cravo</small></h6>
+								<a href="https://rafacoelho.com.br" target="_blank">
+									<h6><small>Desenvolvido por Rafa Coelho</small></h6>
 								</a>
 							</center>
 						</div>
@@ -118,22 +118,19 @@
 <?php
 require("conexao.php");
 if(isset($_POST) && isset($_POST['acao']) == 'logar'){ 
-	
+
 	$login = mysqli_real_escape_string($con, $_POST['login']);
 	$senha = mysqli_real_escape_string($con, $_POST['senha']);
 	
 	$verifica = mysqli_query($con, "SELECT * FROM tbl_usuarios WHERE login = '$login' and senha = '$senha'");
 	$dados = mysqli_fetch_assoc($verifica);
 
-	if(mysqli_num_rows($verifica) == 1 && $login != '' && $senha != ''){
-		$id = $dados['id'];
-
+	if(mysqli_num_rows($verifica) == 1){
 		session_start();	
-		$_SESSION['login'] = $dados['login'];
-		$_SESSION['senha'] = $dados['senha'];
+		$_SESSION['login'] = $login;
+		$_SESSION['senha'] = $senha;
 
 		echo "<script>window.location.href='index.php'</script>";
-		
 	}else{   
 		session_destroy();
 		//Limpa
@@ -143,7 +140,6 @@ if(isset($_POST) && isset($_POST['acao']) == 'logar'){
 		echo "<script>$('#msgErro').modal('show')</script>";
 	}
 }
-
 ?>
 </body>
 </html>

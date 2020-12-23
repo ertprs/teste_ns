@@ -62,14 +62,14 @@
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.php">                 
                      <span>                       
-                        <img src="images/hc_logo.png" class="img-fluid" width="200">
+                        <img src="images/logo-dark.png" class="img-fluid" width="200">
                     </span>
                 </a>
             </div>
             <div class="navbar-collapse">                  
                 <ul class="navbar-nav mr-auto mt-md-0 pt-3 pl-3">
 
-                    <h3 class="text-white">Sistema HC - notícia e jornal</h3>
+                    <h3 class="text-white">Sistema de Locadora - Teste NS</h3>
 
                     
                 </ul>
@@ -96,33 +96,21 @@
                     <li>
                         <a href="index.php" class="waves-effect"><i class="fa fa-dashboard m-r-10" aria-hidden="true"></i>Painel Inicial</a>
                     </li>
+                    
                     <li>
-                        <a href="#"><i class="fa fa-envelope-o m-r-10" aria-hidden="true"></i>Jornal HC</a>
-                        <ul>
-                         <li>
-                            <a href="lista-ver-todos.php" class="waves-effect"><i class="fa fa-newspaper-o m-r-10" aria-hidden="true"></i>Criar Jornal</a>
-                        </li>
-                        <li>
-                            <a href="noticia-lista.php" class="waves-effect"><i class="fa fa-newspaper-o m-r-10" aria-hidden="true"></i>Ambiente de Notícias</a>
-                        </li>
-                        
-                        <li>
-                            <a href="adicionar-emails.php" class="waves-effect"><i class="fa fa-envelope-o m-r-10" aria-hidden="true"></i>E-mails </a>
-                        </li>
-                    </ul>
-                </li>
+                        <a href="clientes.php" class="waves-effect"><i class="fa fa-user m-r-10" aria-hidden="true"></i>Cadastrar cliente</a>
+                    </li> 
+                    <li>
+                        <a href="filmes-lista.php" class="waves-effect"><i class="fa fa-film m-r-10" aria-hidden="true"></i>Cadastrar Filmes</a>
+                    </li>                         
 
-                <li>
-                    <a href="noticia-loop-lista.php" class="waves-effect"><i class="fa fa-picture-o m-r-10" aria-hidden="true"></i>Imagem Loop - siteHC </a>
-                </li>                        
-
-            </ul>
-        </nav>
-        <div class="sidebar-footer">
-            <center>
-               <small>Tecnologia Limão Cravo</small>
-           </center>
-       </div>
-   </div>
-</aside>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <center>
+                 <small>Tecnologia NS</small>
+             </center>
+         </div>
+     </div>
+ </aside>
 
